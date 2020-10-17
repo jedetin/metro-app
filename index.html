@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Metro App ©</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <style type="text/css">
+
+.style1 {font-size: 16px}
+
+        </style>
+</head>
+    <body>
+        <div class="title"> 
+          <div class="subtitle"><i>Implementing to benefits</i></div>
+        <br>
+        <h3>City Metro App</h3></div>
+        <div class="navLink">
+           <div class="divlink"><a href="#">Home </a></div> 
+        <div class="divlink"><a href="#">About </a></div> 
+        <div class="divlink"><a href="#">Contact </a></div><br><hr></div> 
+        
+<div class="section group">
+	<div class="col span_1_of_3">
+    <div class="sidebar">
+      <h3>Find out fare and route </h3>
+      <p class="dingbat">Only Green Line active now!</p>
+      <div class="sidebarFooter"><b>Source Station</b><br>
+      <select value="from" id="from">
+      <option selected disabled>Select Source</option>
+       <option disabled>----Green Line----</option>
+        <option value="GARP">Arupur</option>
+        <option value="GPAB">Pabad</option>
+        <option value="GDUT">Dutala</option>
+        <option value="GYOR">Yoruppur</option>
+        <option value="GVUR">Vurgate</option>
+        <option value="GMAL">Malawy</option>
+        <option value="GKAC">Kachkor</option>
+        <option value="IHFA">Heifa</option>
+        <option value="GSYN">Synghalee</option>
+        <option disabled>----Red Line----</option>
+        <option value="IHFA">Heifa</option>
+        <option value="RMDF">Macduff</option>
+        <option value="RSTR">Satar</option>
+        <option value="RRSR">Rasur</option>
+        <option value="RCMN">Caman</option>
+        <option value="RBRN">Bhraini</option>
+
+      </select>
+      </div>
+      <div class="sidebarFooter"> <b>Destination</b><br>
+        <select id="to" value="to">
+      <option selected disabled>Select Destination</option>
+      <option disabled>----Green Line----</option>
+      <option value="GARP">Arupur</option>
+      <option value="GPAB">Pabad</option>
+      <option value="GDUT">Dutala</option>
+      <option value="GYOR">Yoruppur</option>
+      <option value="GVUR">Vurgate</option>
+      <option value="GMAL">Malawy</option>
+      <option value="GKAC">Kachkor</option>
+      <option value="IHFA">Heifa</option>
+      <option value="GSYN">Synghalee</option>
+      <option disabled>----Red Line----</option>
+        <option value="IHFA">Heifa</option>
+        <option value="RMDF">Macduff</option>
+        <option value="RSTR">Satar</option>
+        <option value="RRSR">Rasur</option>
+        <option value="RCMN">Caman</option>
+        <option value="RBRN">Bhraini</option>
+      </select><br>
+      <button class="button" onClick="cost()">Go</button></div>
+      
+      </div>
+
+  </div>
+	<div class="col span_1_of_3">
+   <p class="header">Welcome to Abersubbu City !</p>
+   <p class="text">The reason we have such an old and simple website is we love minimalism and want a retro website to honor the website development in early times.</p>
+   
+   <div class="box1"><div class="sidebarFooter">
+     <h2>Fare</h2>
+   </div>
+
+  <table width="100%" border="1" cellspacing="10" cellpadding="10">
+    <tr>
+      <th scope="row"> From:</th>
+      <td><p id="x101" class="op"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">To</th>
+      <td><p id="x102" class="op"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">Stations</th>
+      <td><p id="x201" class="op"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">Distance </th>
+      <td><p id="x202" class="op"></p></td>
+    </tr>
+    <tr>
+      <th scope="row">Fare</th>
+      <td><p id="x301" class="op"></p></td>
+    </tr>
+  </table>
+  
+   </div>
+	</div>
+	<div class="col span_1_of_3">
+    <div class="sidebarFooter">
+      <h2>Metro Map</h2>
+      <div class="zoom"><img src="source.svg" width="100%"></div>
+    </div>
+    
+    </div>
+</div>
+
+<div class="footer"><p align="center"><b>&copy; 2001-20 Fiogee App Labs</b> <br>Headquartered and Managed from Greater Jaipur Area</p>
+
+</div>
+    </body>
+
+    <script src="script.js"></script>
+</html>
