@@ -25,28 +25,38 @@
 	<div class="col span_1_of_3">
     <div class="sidebar">
       <h3>Find out fare and route </h3>
-      <p class="dingbat">Only Green and Red Line active now!</p>
+      <p class="dingbat">All Lines are active, however shortest path has been disabled due to taxes!</p>
       <div class="sidebarFooter"><b>Source Station</b><br>
       <select value="from" id="from">
-      <option selected disabled>Select Source</option>
-       <option disabled>----Green Line----</option>
+        <option selected disabled>Select Destination</option>
+        <option disabled>----Green Line----</option>
         <option value="GARP">Arupur</option>
         <option value="GPAB">Pabad</option>
+        <option value="GTMT">Thamat</option>
         <option value="GDUT">Dutala</option>
         <option value="GYOR">Yoruppur</option>
         <option value="GVUR">Vurgate</option>
         <option value="GMAL">Malawy</option>
         <option value="GKAC">Kachkor</option>
-        <option value="IHFA">Heifa</option>
+        <option value="GHFA">Heifa</option>
+        
         <option value="GSYN">Synghalee</option>
-        <option disabled>----Red Line----</option>
-        <option value="IHFA">Heifa</option>
+      <option disabled>----Red Line----</option>
+      <option value="RHFA">Heifa</option>
         <option value="RMDF">Macduff</option>
         <option value="RSTR">Satar</option>
         <option value="RRSR">Rasur</option>
         <option value="RCMN">Caman</option>
         <option value="RBRN">Bhraini</option>
-
+      <option disabled>----Yellow Line----</option>
+       <option value="YBRN">Bhraini</option>
+        <option value="YDMD">Demandya</option>
+        <option value="YCNM">Chinnam</option>
+        <option value="YTMT">Thamat</option>
+        <option value="YSGO">Sagao</option>
+        <option value="YRPG">Rapalgarh</option>
+        <option value="YSPR">Sepura</option>
+        <option value="YBLR">Belore</option>
       </select>
       </div>
       <div class="sidebarFooter"> <b>Destination</b><br>
@@ -55,21 +65,33 @@
       <option disabled>----Green Line----</option>
       <option value="GARP">Arupur</option>
       <option value="GPAB">Pabad</option>
+      <option value="GTMT">Thamat</option>
       <option value="GDUT">Dutala</option>
       <option value="GYOR">Yoruppur</option>
       <option value="GVUR">Vurgate</option>
       <option value="GMAL">Malawy</option>
       <option value="GKAC">Kachkor</option>
-      <option value="IHFA">Heifa</option>
+      <option value="GHFA">Heifa</option>
+      
       <option value="GSYN">Synghalee</option>
-      <option disabled>----Red Line----</option>
-        <option value="IHFA">Heifa</option>
-        <option value="RMDF">Macduff</option>
-        <option value="RSTR">Satar</option>
-        <option value="RRSR">Rasur</option>
-        <option value="RCMN">Caman</option>
-        <option value="RBRN">Bhraini</option>
-      </select><br>
+    <option disabled>----Red Line----</option>
+    <option value="GHFA">Heifa</option>
+      <option value="RMDF">Macduff</option>
+      <option value="RSTR">Satar</option>
+      <option value="RRSR">Rasur</option>
+      <option value="RCMN">Caman</option>
+      <option value="RBRN">Bhraini</option>
+    <option disabled>----Yellow Line----</option>
+     <option value="YBRN">Bhraini</option>
+      <option value="YDMD">Demandya</option>
+      <option value="YCNM">Chinnam</option>
+      <option value="YTMT">Thamat</option>
+      <option value="YSGO">Sagao</option>
+      <option value="YRPG">Rapalgarh</option>
+      <option value="YSPR">Sepura</option>
+      <option value="YBLR">Belore</option>
+      
+    </select><br>
       <button class="button" onClick="cost()">Go</button></div>
       
       </div>
@@ -102,6 +124,10 @@
       <td><p id="x202" class="op"></p></td>
     </tr>
     <tr>
+      <th scope="row">Estimated Time</th>
+      <td><p id="x203" class="op"></p></td>
+    </tr>
+    <tr>
       <th scope="row">Fare</th>
       <td><p id="x301" class="op"></p></td>
     </tr>
@@ -113,6 +139,7 @@
     <div class="sidebarFooter">
       <h2>Metro Map</h2>
       <div class="zoom"><img src="source.svg" width="100%"></div>
+      <p><a href="source.svg" target="_blank">View Full screen map</a></p>
     </div>
     
     </div>
